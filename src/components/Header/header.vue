@@ -21,7 +21,16 @@
             <span>5个</span>
             <i class="icon-keyboard_arrow_right"></i>
         </div>    
-
+        <div class="mask">
+            <div class="mainWrap">
+                <div class="main">
+                    <!--画遮罩页-->
+                </div>
+            </div>
+            <div class="footer">
+                <i class="icon-close"></i>
+            </div>
+        </div>
     </div>
     <div class="bulletin">
         <div class="icon">
@@ -158,5 +167,26 @@ import icon from '../icon/icon';
         img
             width 100%
             height 100%
+    .mask
+        position fixed
+        left 0
+        right 0
+        top 0
+        bottom 0
+        z-index 9
+        background rgba(7,17,27,.8)
+        overflow auto
+        .mainWrap
+            min-height 100%
+            .main
+                @extend .clearfix
+                padding-bottom 96px
+        .footer
+            margin-top -96px
+            height 96px
+            line-height 96px
+            color white
+            text-align center
+            font-size 32px
 </style>
     
